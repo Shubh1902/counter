@@ -1,0 +1,79 @@
+.counter-wrapper {
+  --font-family: sans-serif;
+  width: 100%;
+  height: auto;
+  position: relative;
+  font-family: var(--font-family);
+}
+.counter {
+  --button-color: #b34040;
+  --button-width: 60px;
+  --button-height: 50px;
+  --button-border-radius: 10px;
+  --button-border-width: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.counter > div {
+  display: flex;
+  width: var(--button-width);
+  height: var(--button-height);
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+.subtract {
+  border-top-left-radius: var(--button-border-radius);
+  border-bottom-left-radius: var(--button-border-radius);
+  border: var(--button-border-width) solid var(--button-color);
+  color: var(--button-color);
+  cursor: pointer;
+}
+.value {
+  color: var(--button-color);
+  border-top: var(--button-border-width) solid var(--button-color);
+  border-bottom: var(--button-border-width) solid var(--button-color);
+  background-color: #fbe9e9;
+}
+.add {
+  border-top-right-radius: var(--button-border-radius);
+  border-bottom-right-radius: var(--button-border-radius);
+  border: var(--button-border-width) solid var(--button-color);
+  color: #ffffff;
+  background-color: var(--button-color);
+  cursor: pointer;
+}
+.text-bold {
+  font-weight: 700;
+}
+
+.font-size-13 {
+  font-size: 13px;
+}
+.counter-value {
+  margin: 10px;
+}
+.value-input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: center;
+  color: inherit;
+  background: inherit;
+  outline: none;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
