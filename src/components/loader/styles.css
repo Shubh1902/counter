@@ -5,6 +5,8 @@
   align-items: center;
 }
 .loader > div {
+  margin-left: 10px;
+  margin-right: 10px;
   font-weight: 600;
   font-size: 13px;
 }
